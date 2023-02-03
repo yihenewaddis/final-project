@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/gettreatment.css">
+    <script src="https://kit.fontawesome.com/4b820c360b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>BDUclinic</title>
+</head>
+<body style="height:1000px">
+ <div class="wrap">  
+  <div class="imgs"> 
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    
+      <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
+        <div class="container-fluid containe r"  style="width:100%">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-stethoscope" style="margin-left: 30px;"></i><h4>Healthy life</h4></a>
+          
+          <button class="navbar-toggler" style="width:50px"  type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            
+            <ul class="navbar-nav me-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="homepage.html" target="_self" style="transition: 0.5s;">Home<i class="fa-solid fa-house" style="padding-left:7px"></i>
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link"  href="disease.html" target="_self">disease</a>
+            
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="news.html" target="_self" style="transition: 0.5s;">News</a>
+              </li>
+    
+              
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="gettreatment.html" target="_self" style="transition: 0.5s;">Get_treatment</a>
+              </li>
+             
+              
+              
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" target="_self">contact<i class="fa-solid fa-phone-volume" ></i></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="form">
+        <form>
+          <h3>ዶክተርዎን ያግኙ</h3>
+           <div class="col-md-4">
+             <label for="validationDefault01" class="form-label">የመጀመሪያ ስም</label><br>
+             <input type="text" class="form-control" id="validationDefault01" placeholder="alemu" required>
+           </div><br>
+           <div>
+             <label for="validationDefault02" class="form-label">የአባት ስም</label><br>
+             <input type="text" class="form-control" id="validationDefault02" placeholder="babo" required>
+           </div><br>
+           <div>
+             <label for="validationDefaultUsername"
+              class="form-label">መለያ ስም(email addres)</label><br>
+             
+             <div class="input-group">
+              
+               <input 
+               placeholder="yayo@gmail.com"
+               type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+             </div>
+           </div><br>
+           <div>
+            <label for="validationDefaultUsername" class="form-label">ስልክ ቁጥር</label><br>
+            
+            <div class="input-group">
+             
+              <input type="number"
+              placeholder="0989..." class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div><br>
+           <div >
+             <label for="validationDefault03" class="form-label">የሚገኙበት ከተማ  (City)</label><br>
+             <input type="text" class="form-control" id="validationDefault03" required>
+           </div><br>
+           
+           <div class="mb-3">
+               <label for="exampleFormControlTextarea1" class="form-label">የህመም ስሜትዎን ይግለጹ</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+   
+           
+   
+       
+             <a href="http://127.0.0.1:5500/html/submit.html" class="bot"> <button type="submit" ><h4>ለ ዶክተርዎ ይላኩ</h4></button></a>
+         </form>
+      </div>
+
+
+
+
+<div class="bmi">
+  
+     <script>
+      function bmicalaculate(){
+  
+              var n1=document.getElementById("height").value;
+              var n2=document.getElementById("weight").value;
+              var n3=n1*n1;
+              var n4=n2/n3;
+              
+              document.getElementById("result").innerHTML=n4;
+              if(n4==NaN){
+                document.getElementById('val').innerHTML="nan" 
+              }
+               else if(n4>30.0){
+                document.getElementById('val').innerHTML="obese"
+              }
+
+              
+              else if(n4>25){
+                document.getElementById('val').innerHTML="overweight"
+              }
+           
+               
+              else if(n4>18.5){
+                document.getElementById('val').innerHTML="healthy"
+              }
+              else{
+                document.getElementById('val').innerHTML="underweight"
+              }
+               
+              
+          }
+          </script>
+   
+   
+       <h1>
+           your BMI
+       </h1>
+
+       <p>Please enter your height <span style="font-size: 12px;">( in m )</span></p> 
+       <div style="padding-bottom: 15px;"> <input  id="height" type="number"></div>
+
+
+      <p> Please enter your weight <span style="font-size: 10px;">( in kg )</span></p> 
+       <input id="weight" type="number">
+
+       <br />
+       <button style="padding: 5px 10px; margin-top: 10px;" onclick="bmicalaculate()"> See BMI result</button><br> <br />
+       <h3  id="result" style="color: #fff;"></h3>
+      <h2 id="val">
+
+      </h2>
+</div>
+
+
+
+
+
+    
+  </div>
+</div>
+<script src="../js/gettreatment.js"></script>
+</body>
+</html>

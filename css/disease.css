@@ -1,0 +1,367 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+   padding:0px;
+   margin:0px;
+   z-index: -100;
+   background-color:hsl(0, 0%, 81%);
+   max-width: 100%;
+   font-weight: 100;
+}
+
+.imgs{
+    background-image: url('../bodyimage/homeanimat/disea.webp'); 
+    object-fit: cover;
+    z-index:-100 ;
+    background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   margin: 0px;
+   padding: 0%;
+   height: 100vh;
+  background-position-y:0px ;
+  position: fixed;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    opacity: 100%;
+    background-color: aliceblue;
+    z-index: 1;
+  
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul li{
+    margin: 10px 15px;
+    transition: 0.5s;
+   
+}
+.nav-item:hover{
+     transition: 0.5s;   
+border-bottom: 2px solid red;
+border-radius: 10px;
+}
+nav ul{
+    margin-left: 20px;
+}
+
+.active{   
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    
+    }
+.fa-solid{
+    padding-left: 5px;
+}
+header{
+    width:100%;
+    margin: 0px;
+    padding:0px;
+    
+}
+.container{
+    width:100%;
+    margin: 0px;
+    padding:0px;
+}
+.rap{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.hone{
+    position: absolute;
+    top:25%;
+    margin: auto;
+    color:#fff;
+    width:50%;
+    text-align: center;
+}
+
+.hed{
+    
+    opacity: 25%;
+    color:white;
+    background-image: url('../bodyimage/cancer/cancer02.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-position: 0ch;
+    width:100%;
+    z-index: -1;
+   height: 500px;
+}
+.hed img{
+    width: 100%;
+}
+.content{
+  width:80%; 
+  background-color: #fff;
+  border-radius: 5px;
+  margin:auto;
+  margin-top: 20px;
+  display: flex; 
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.hone{
+    padding-left: 30px;
+}
+.content img{
+    width:100%;
+    height:48vh;
+    margin-right: 20px;
+}
+.element{
+    padding: 10px 20px;
+    text-align: center;
+}
+.flexy{
+    width:80%;
+    display:flex;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.article{
+  width:33%;
+  margin: 10px 20px;
+  padding:10px 15px;
+  position: relative;
+  text-align: center;
+  border:1px solid red;
+  border-radius: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+
+}
+.article h3{
+    padding: 10px 0px;
+    font-family: serif;
+    
+}
+.article img{
+    width:95%;
+}
+
+
+.buttons{
+    padding: 15px;
+    width:90%;
+    color:white;
+    position: relative;
+    left: 30px;
+    margin-top: 20px;
+    bottom: 5px;
+    background-color: hsl(263, 87%, 40%);
+    text-align: center;
+    border:1px solid black;
+   transition: 0.5s;
+    border-radius: 10px;
+}
+.buttons:hover{
+    background-color: hsl(263, 59%, 55%); 
+    left: 0px;
+}
+.diab{
+    background-color: rgb(6, 11, 19);
+    margin-top: 20px; 
+   
+}
+.dibet{
+    background-image: url('../bodyimage/cancer/diabet1.jpg');
+    object-fit: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:60vh;
+    background-position-y:-20px ;
+    opacity:100%;
+}
+.definition{
+    color:#fff;
+    width:50%;
+  
+    padding: 10% 5%;
+    text-align: center;
+    opacity: 100%;
+ 
+}
+.other{
+    background-color: #000;
+    color:#fff;
+    padding:20px;
+}
+.yon{
+    opacity: 200%;
+}
+.list{
+    text-align: center;
+   
+    width:70%;
+    margin: auto;
+    margin-top: 60px;
+}
+.grid{
+    margin: auto;
+    width:70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.one{
+    border:2px solid red;
+    margin: 10px;
+    border-radius: 10px;
+    padding:16px 10px;
+    text-align: center;
+}
+.type1{
+    grid-row: 1/4;
+    grid-column: 1;
+    background-color: #000;
+    color:#fff;
+}
+.insulin{
+    grid-column: 2/4;
+    grid-row: 1;
+    background-color: hsl(0, 0%, 100%);
+}
+.short{
+    grid-column: 2/4;
+    grid-row: 2;
+    color:#fff;
+    background-color:  hsl(217, 19%, 35%);
+}
+.rapid{
+    grid-column: 2/4;
+    grid-row: 3;
+    color:#fff;
+    background-color: hsl(263, 55%, 52%);
+}
+.internal{
+    grid-column: 1/4;
+    grid-row: 4;
+    background-color: hsl(0, 0%, 81%);
+}
+
+.heart{
+    background-image: url('../bodyimage/cancer/heart2.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    color:#fff;
+   
+    height:70vh;
+  
+    background-position-y: -80px;
+    color:black;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:90%;
+    margin: auto;
+}
+article{
+    display: flex;
+    margin-left: 10px;
+    padding: 10px;
+    width:98%;
+    height: 100%;
+   
+    background-color: #fff;
+  
+}
+
+.yi{
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s;
+}
+article img{
+  width:50%; 
+  height: 50vh; 
+}
+article p ,h2{
+    padding: 0px 10px;
+}
+.yi:hover{
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border: 4px solid red;
+}
+.fotter{
+    width:100%;
+    text-align: center;
+    background-color: black;
+    margin-top: 200px;
+    margin-top: 100px;
+    height: 100px;
+   }
+   .fa-brandss{
+    padding: 20px 3%;
+    font-size: 30px;
+    transition: 0.5s;
+   }
+   .fa-brandss:hover{
+color: hsl(263, 55%, 52%);
+
+
+   }
+  
+  
+ 
+
+
+@media(max-width:1000px){
+    nav ul{
+        margin-left: 50%;
+    } 
+    .content{
+        width:95%; 
+        margin:auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column; 
+      } 
+      .flexy{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .article{
+        width:100%;
+       
+      
+      }
+       
+      .content img{
+        width:90%;
+        padding-top: 20px;
+        margin: auto;
+    }
+    .grid{
+       display: block;
+       width:95%;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr;
+        width:95%;
+       
+    }
+}
